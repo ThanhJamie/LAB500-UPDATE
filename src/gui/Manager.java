@@ -29,7 +29,7 @@ public class Manager {
         do {            
             listInj.loadFileInj(filenameInj, listStu);
             System.out.println("Covid-19 Vaccine Management - FPT University @2021 by<SE150380 - Dang Chi Thanh>");
-            System.out.println("---------------------------------");
+            System.out.println("---------------------------------------------------------------------------------");
             System.out.println("Select the options below: ");
             System.out.println("1. Show information all students have been injected. ");
             System.out.println("2. Add student's vaccine injection information. ");
@@ -39,7 +39,7 @@ public class Manager {
             System.out.println("6. Store data to file. ");
             System.out.println("7. Information Encryption. ");
             System.out.println("8. Others- Quit. ");
-            System.out.println("---------------------------------");
+            System.out.println("---------------------------------------------------------------------------------");
             option = MyValidation.inputIntRage("Your choice: ", option, 1, 8, inputAgain);
             switch(option){
                 case 1:
@@ -80,7 +80,8 @@ public class Manager {
                     break;
                 case 6:
                     listInj.saveFileInj(filenameInj);
-                    System.out.println(">>> Save successful.");
+                    System.err
+                            .println(">>> Save successful.");
                     break;
                 case 7:
                     listInj.saveFileInjMD5();
@@ -88,7 +89,7 @@ public class Manager {
             }
         } while (option > 0 && option < 8);
         if (option == 8){
-            System.out.println("Good bye!");
+            System.err.println("Good bye!");
         }
     }
 }

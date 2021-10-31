@@ -106,7 +106,7 @@ public class InjectionList {
             System.out.println();
         } else {
             System.out.println(">>> LIST INJECTION <<<");
-            System.out.println("| ++ ID INJECTION ++ | +++ STUDENT ID +++ | +++ VACCINE ID +++ | ++++ FIRST PLACE +++++ | ++++ FIRST DATE ++++ | ++++ SECOND PLACE +++++ | ++++ SECOND DATE ++++ |");
+            System.out.println("| -- ID INJECTION -- | --- STUDENT ID --- | --- VACCINE ID --- | ---- FIRST PLACE ---- | ---- FIRST DATE ---- | ----- SECOND PLACE ----- | ---- SECOND DATE ---- |");
             for (Injection inj : list) {
                 System.out.println(inj);
             }
@@ -166,7 +166,7 @@ public class InjectionList {
             for (Injection inj : list) {
                 if (inj.getIdStu().toLowerCase().equals(idStuToSeach)) {
                     System.out.println(">>> INFORMATION OF INJECTION <<<");
-                    System.out.println("| ++ ID INJECTION ++ | +++ STUDENT ID +++ | +++ VACCINE ID +++ | ++++ FIRST PLACE +++++ | ++++ FIRST DATE ++++ | ++++ SECOND PLACE +++++ | ++++ SECOND DATE ++++ |");
+                    System.out.println("| -- ID INJECTION -- | --- STUDENT ID --- | --- VACCINE ID --- | ---- FIRST PLACE ---- | ---- FIRST DATE ---- | ----- SECOND PLACE ----- | ---- SECOND DATE ---- |");
                     System.out.println(inj);
                     exist = 1;
                 }else{
@@ -190,7 +190,7 @@ public class InjectionList {
             for (Injection inj : list) {
                 if (stuList.searchStudent(inj.getIdStu()).getName().toLowerCase().equalsIgnoreCase(stuName)) {
                     System.out.println(">>> INFORMATION OF INJECTION <<<");
-                    System.out.println("| ++ ID INJECTION ++ | +++ STUDENT ID +++ | +++ VACCINE ID +++ | ++++ FIRST PLACE +++++ | ++++ FIRST DATE ++++ | ++++ SECOND PLACE +++++ | ++++ SECOND DATE ++++ |");
+                    System.out.println("| -- ID INJECTION -- | --- STUDENT ID --- | --- VACCINE ID --- | ---- FIRST PLACE ---- | ---- FIRST DATE ---- | ----- SECOND PLACE ----- | ---- SECOND DATE ---- |");
                     System.out.println(inj);
                     exist = 1;
                 }
@@ -255,10 +255,10 @@ public class InjectionList {
                 choice = MyValidation.inputYesNo("Do you want to remove this injection? (Y/N): ", choice, inputAgain);
                 if (choice.equals("Y")) {
                     list.remove(pos);
-                    System.out.println(">>> " + idToRemove + " removed successfull.");
+                    System.err.println(">>> " + idToRemove + " removed successfull.");
                     System.out.println();
                 } else {
-                    System.out.println("Remove fail! Please try again!");
+                    System.err.println("Remove fail! Please try again!");
                     System.out.println();
                 }
             }

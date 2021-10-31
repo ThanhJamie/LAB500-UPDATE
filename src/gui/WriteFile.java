@@ -21,16 +21,17 @@ public class WriteFile {
         VaccineList listVac = new VaccineList();
         String filenameVac = "Vaccine.dat";
         
-        listStu.addStudent(new Student("SE140001", "Tran Phu Son"));
-        listStu.addStudent(new Student("SE140002", "Tran Gia Hao"));
-        listStu.addStudent(new Student("SE140003", "Van Thi My Anh"));
-        listStu.addStudent(new Student("SE150004", "Lam Van Phai"));
-        listStu.addStudent(new Student("SE150005", "Le Tuyet Nhung"));
-        listStu.addStudent(new Student("SE150006", "Ngo Minh Hung"));
-        listStu.addStudent(new Student("SE150007", "Nguyen Tan Dat"));
-        listStu.addStudent(new Student("SE160008", "Phung Thi Thuy Trang"));
-        listStu.addStudent(new Student("SE160009", "Nguyen Gia Trung Kien"));
-        listStu.addStudent(new Student("SE160010", "Phuong Thi Thu Dung"));
+        listStu.addStudent(new Student("AI01", "Nguyen Van A"));
+        listStu.addStudent(new Student("AI02", "Nguyen Van B"));
+        listStu.addStudent(new Student("AI03", "Nguyen Van C"));
+        listStu.addStudent(new Student("AI04", "Nguyen Van D"));
+        listStu.addStudent(new Student("AI05", "Nguyen Van E"));
+        listStu.addStudent(new Student("AI06", "Nguyen Van F"));
+        listStu.addStudent(new Student("AI07", "Nguyen Van G"));
+        listStu.addStudent(new Student("AI08", "Nguyen Van H"));
+        listStu.addStudent(new Student("AI09", "Nguyen Van T"));
+        
+        
         listStu.printStudent();
         listStu.saveFileStudent(filenameStu);
         
